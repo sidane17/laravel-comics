@@ -7,7 +7,11 @@
 <body>
     @include('header')
 <ul>
-       <p > {{$title}}</p>
+       <ul>
+        @foreach($fumetti as $fumetto)
+        <li>{{$fumetto['title']}}</li>
+        @endforeach
+       </ul>
         
         
     </ul>

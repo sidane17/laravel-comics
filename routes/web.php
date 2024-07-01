@@ -16,15 +16,22 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+//Route::get('/test', function () {
+//    //$data=config("store");
+//    $data=[
+//        'nome'=>'khalil',
+//        'cognome'=>'sidane',
+//        'email'=>'khalil@gmail.com'
+//   ];
+//    return view('test',$data);
+//});
+
 Route::get('/test', function () {
-    $data=config("store");
-    $prova=config("store");
-  //  $data=[
-        //'nome'=>'khalil',
-       // 'cognome'=>'sidane',
-     //   'email'=>'khalil@gmail.com'
-   // ];
-    return view('test',$prova);
+
+    $data = [
+        "fumetti"=> Config("store")
+    ];
+    return view('test', $data );
 });
 
 
