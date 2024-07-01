@@ -16,11 +16,15 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/home', function () {
-    $data=[
-        'nome'=>'khalil',
-        'cognome'=>'sidane',
-        'email'=>'khalil@gmail.com'
-    ];
-    return view('welcome',$data);
+Route::get('/test', function () {
+    $data=config("store");
+    $prova=config("store");
+  //  $data=[
+        //'nome'=>'khalil',
+       // 'cognome'=>'sidane',
+     //   'email'=>'khalil@gmail.com'
+   // ];
+    return view('test',$prova);
 });
+
+
