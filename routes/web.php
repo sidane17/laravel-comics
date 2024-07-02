@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name("home");
 //Route::get('/test', function () {
 //    //$data=config("store");
 //    $data=[
@@ -32,6 +32,6 @@ Route::get('/test', function () {
         "fumetti"=> Config("store")
     ];
     return view('test', $data );
-});
+})->name("test");
 
 

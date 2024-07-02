@@ -9,7 +9,12 @@
 <ul>
        <ul>
         @foreach($fumetti as $fumetto)
-        <li>{{$fumetto['title']}}</li>
+        <li>Titolo: {{$fumetto['title']}}</li>
+        <li>Descirzione: {{$fumetto['description']}}</li>
+        <li>thumb: {{$fumetto['thumb']}}</li>
+        <li>prezzo: {{$fumetto['price']}}</li>
+        <li>tipo: {{$fumetto['type']}}</li>
+        <br>
         @endforeach
        </ul>
         
